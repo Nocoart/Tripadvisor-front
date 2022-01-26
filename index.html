@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="./assets/img/Tripadvisor_logoset_solid_green.svg" />
+		<link rel="stylesheet" href="./assets/css/reset.css" />
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<link rel="stylesheet" href="./assets/css/fonts.css" />
+		<script
+			src="https://kit.fontawesome.com/8ad7519b28.js"
+			crossorigin="anonymous"
+		></script>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+
+		<title>TripAdvisor</title>
+	</head>
+
+	<header>
+		<div class="container">
+			<img
+				id="logo"
+				src="./assets/img/Tripadvisor_lockup_horizontal_secondary_registered.svg"
+				alt=""
+			/>
+			<div class="search-field">
+				<i class="fas fa-search"></i>
+				<input type="text" />
+			</div>
+			<nav class="primary-nav">
+				<ul>
+					<li>
+						<a href=""><i class="fas fa-pencil-alt"></i><span> Avis</span></a>
+					</li>
+
+					<li>
+						<a href=""><i class="far fa-heart"></i><span> Voyages</span> </a>
+					</li>
+					<li>
+						<a href=""><i class="far fa-bell"></i><span> Alertes</span> </a>
+					</li>
+					<li id="connexion-button">
+						<button href="">Connectez-vous</button>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<body>
+		<div class="container">
+			<section class="first-section">
+				<h1><span>Explorez</span> Paris</h1>
+				<nav class="secondary-navbar">
+					<ul>
+						<li><a href="">Hôtel</a><i class="fas fa-bed"></i></li>
+						<li>
+							<a href="">Location de vacances</a
+							><i class="fas fa-house-user"></i>
+						</li>
+						<li><a href="">Activités</a><i class="fas fa-ticket-alt"></i></li>
+						<li><a href="">Restaurants</a><i class="fas fa-utensils"></i></li>
+						<div class="flex-break"></div>
+						<li>
+							<a href="">Forums de voyage</a><i class="far fa-comments"></i>
+						</li>
+						<li class="no-display">
+							<a href="">Vols</a><i class="fas fa-plane"></i>
+						</li>
+						<li class="no-display">
+							<a href="">Croisières</a><i class="fas fa-ship"></i>
+						</li>
+						<li><a href="">Plus</a><i class="fas fa-ellipsis-h"></i></li>
+					</ul>
+				</nav>
+				<div class="carousel">
+					<div class="large-pic">
+						<img src="./assets/img/caption1.jpg" alt="" />
+						<a href=""><i class="far fa-image"></i> Toutes les photos</a>
+					</div>
+					<div class="small-pic">
+						<img src="./assets/img/caption2.jpg" alt="" />
+						<img src="./assets/img/caption3.jpg" alt="" />
+					</div>
+				</div>
+				<div class="links">
+					<p>Europe > France > Île-de-France > Paris</p>
+					<p>Visiter : Paris</p>
+				</div>
+			</section>
+
+			<section class="second-section">
+				<div class="description">
+					<h2>La Ville Lumière éblouit en tous points</h2>
+					<p>
+						Aucun autre endroit au monde ne fait autant rêver que Paris. La
+						ville séduit par son art, son architecture, sa culture et sa
+						cuisine, mais il y a aussi des merveilles plus discrètes qui
+						n’attendent qu’à être explorées : les ruelles pavées pittoresques,
+						les pâtisseries au coin de la rue et les petits bistrots douillets
+						qui vous invitent à boire un verre de beaujolais. Préparez-vous à
+						vous approprier Paris.
+					</p>
+				</div>
+				<aside>
+					<div class="carte">
+						<h2>Paris : Commencez à organiser !</h2>
+						<p>
+							Créez un voyage pour enregistrer et organiser toutes vos idées et
+							les visualiser sur une carte
+						</p>
+						<button>Créez un voyage</button>
+					</div>
+					<img class="map" src="./assets/img/map.png" alt="" />
+				</aside>
+			</section>
+			<section class="third-section">
+				<!-- SE DIVERTIR  -->
+				<div class="carousel">
+					<div class="description carousel-item">
+						<h3>Se divertir</h3>
+						<p>
+							Des lieux à voir, des rues à explorer et des expériences
+							emblématiques à Paris.
+						</p>
+						<a href="">Tout afficher</a>
+					</div>
+					<div class="carte carousel-item">
+						<div class="carousel-pic">
+							<img
+								class="actual-pic"
+								src="./assets/img/eiffeltoren.jpg"
+								alt=""
+							/>
+							<i class="far fa-heart top-right"></i>
+							<img
+								class="bottom-left"
+								src="/assets/img/hibou-vert.svg"
+								alt=""
+							/>
+						</div>
+						<h4>Tour Eiffel</h4>
+						<div class="rating">
+							<i class="fas fa-circle"></i>
+							<i class="fas fa-circle"></i>
+							<i class="fas fa-circle"></i>
+							<i class="far fa-circle"></i>
+							<i class="far fa-circle"></i>
+						</div>
+						<p>
+							Tours et plateforme d'observation, Monuments & Points d'intérêt
+						</p>
+					</div>
+					<div class="carte carousel-item">
+						<div class="carousel-pic">
+							<img class="actual-pic" src="./assets/img/louvre.jpg" alt="" />
+							<i class="far fa-heart top-right"></i>
+							<img
+								class="bottom-left"
+								src="/assets/img/hibou-vert.svg"
+								alt=""
+							/>
+						</div>
+
+						<h4>Musée du Louvre</h4>
+						<div class="rating">
+							<i class="fas fa-circle"></i>
+							<i class="fas fa-circle"></i>
+							<i class="fas fa-circle"></i>
+							<i class="far fa-circle"></i>
+							<i class="far fa-circle"></i>
+						</div>
+
+						<p>Bâtiments architecturaux, Musées d'art</p>
+					</div>
+					<div class="carte carousel-item">
+						<div class="carousel-pic">
+							<img
+								class="actual-pic"
+								src="./assets/img/arc-de-triomphe-at-night.jpg"
+								alt=""
+							/>
+							<i class="far fa-heart top-right"></i>
+							<img
+								class="bottom-left"
+								src="/assets/img/hibou-vert.svg"
+								alt=""
+							/>
+						</div>
+
+						<h4>Arc de Triomphe</h4>
+						<div class="rating">
+							<i class="fas fa-circle"></i>
+							<i class="fas fa-circle"></i>
+							<i class="fas fa-circle"></i>
+							<i class="far fa-circle"></i>
+							<i class="far fa-circle"></i>
+						</div>
+						<p>Bâtiments architecturaux, Sites historiques</p>
+					</div>
+				</div>
+				<!-- SE REPOSER -->
+				<div class="carousel">
+					<div class="description carousel-item">
+						<h3>Se reposer</h3>
+						<p>Un mélange de charme, de symboles et de modernité.</p>
+						<a href="">Tout afficher</a>
+					</div>
+					<div class="carte carousel-item">
+						<div class="carousel-pic">
+							<img
+								class="actual-pic"
+								src="./assets/img/le-bristol-paris-colonnade.jpg"
+								alt=""
+							/>
+							<i class="far fa-heart top-right"></i>
+							<img
+								class="bottom-left"
+								src="/assets/img/hibou-vert.svg"
+								alt=""
+							/>
+						</div>
+
+						<h4>Le Bristol Paris</h4>
+						<div class="rating">
+							<i class="fas fa-circle"></i>
+							<i class="fas fa-circle"></i>
+							<i class="fas fa-circle"></i>
+							<i class="far fa-circle"></i>
+							<i class="far fa-circle"></i>
+						</div>
+					</div>
+					<div class="carte carousel-item">
+						<div class="carousel-pic">
+							<img
+								class="actual-pic"
+								src="./assets/img/la-reserve-paris.jpg"
+								alt=""
+							/>
+							<i class="far fa-heart top-right"></i>
+							<img
+								class="bottom-left"
+								src="/assets/img/hibou-vert.svg"
+								alt=""
+							/>
+						</div>
+
+						<h4>La Reserve Paris - Hotel and Spa</h4>
+						<div class="rating">
+							<i class="fas fa-circle"></i>
+							<i class="fas fa-circle"></i>
+							<i class="fas fa-circle"></i>
+							<i class="far fa-circle"></i>
+							<i class="far fa-circle"></i>
+						</div>
+					</div>
+					<div class="carte carousel-item">
+						<div class="carousel-pic">
+							<img
+								class="actual-pic"
+								class="carousel-pic"
+								src="./assets/img/four-seasons.jpg"
+								alt=""
+							/>
+							<i class="far fa-heart top-right"></i>
+						</div>
+
+						<h4>Four Seasons Hotel Georges V</h4>
+						<div class="rating">
+							<i class="fas fa-circle"></i>
+							<i class="fas fa-circle"></i>
+							<i class="fas fa-circle"></i>
+							<i class="far fa-circle"></i>
+							<i class="far fa-circle"></i>
+						</div>
+					</div>
+				</div>
+				<!-- SE RESTAURER -->
+				<div class="carousel">
+					<div class="description carousel-item">
+						<h3>Se restaurer</h3>
+						<p>Bistrots et bars typiques, et plus encore à Paris.</p>
+						<a href="">Tout afficher</a>
+					</div>
+					<div class="carte carousel-item">
+						<div class="carousel-pic">
+							<img class="actual-pic" src="./assets/img/verjus.jpg" alt="" />
+							<i class="far fa-heart top-right"></i>
+						</div>
+
+						<h4>Verjus</h4>
+						<div class="rating">
+							<i class="fas fa-circle"></i>
+							<i class="fas fa-circle"></i>
+							<i class="fas fa-circle"></i>
+							<i class="far fa-circle"></i>
+							<i class="far fa-circle"></i>
+						</div>
+						<p>€€€€ • Française, Européenne, Moderne</p>
+					</div>
+					<div class="carte carousel-item">
+						<div class="carousel-pic">
+							<img
+								class="actual-pic"
+								src="./assets/img/114faubourg.jpg"
+								alt=""
+							/>
+							<i class="far fa-heart top-right"></i>
+							<img
+								class="bottom-left"
+								src="/assets/img/hibou-vert.svg"
+								alt=""
+							/>
+						</div>
+						<img class="michelin" src="./assets/img/michelin.png" alt="" />
+						<h4>114 Faubourg</h4>
+						<div class="rating">
+							<i class="fas fa-circle"></i>
+							<i class="fas fa-circle"></i>
+							<i class="fas fa-circle"></i>
+							<i class="far fa-circle"></i>
+							<i class="far fa-circle"></i>
+						</div>
+						<p>€€€€ • Française, Européenne, Moderne</p>
+					</div>
+					<div class="carte carousel-item">
+						<div class="carousel-pic">
+							<img class="actual-pic" src="./assets/img/frenchie.jpg" alt="" />
+							<i class="far fa-heart top-right"></i>
+							<img
+								class="bottom-left"
+								src="/assets/img/hibou-vert.svg"
+								alt=""
+							/>
+						</div>
+
+						<img class="michelin" src="./assets/img/michelin.png" alt="" />
+						<h4>Frenchie</h4>
+						<div class="rating">
+							<i class="fas fa-circle"></i>
+							<i class="fas fa-circle"></i>
+							<i class="fas fa-circle"></i>
+							<i class="far fa-circle"></i>
+							<i class="far fa-circle"></i>
+						</div>
+						<p>€€€€ • Française, Européenne, Moderne</p>
+					</div>
+				</div>
+			</section>
+		</div>
+	</body>
+	<footer>
+		<img src="./assets/img/Tripadvisor_logoset_solid_green.svg" alt="" />
+		<p>Made at <span>Le Reacteur</span> by <span>Nicolas Guerineau</span></p>
+	</footer>
+</html>
