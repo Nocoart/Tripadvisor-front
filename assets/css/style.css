@@ -92,7 +92,7 @@ header ul {
 }
 
 .primary-nav i {
-	font-size: 20px;
+	font-size: 22px;
 }
 
 .primary-nav a {
@@ -210,7 +210,8 @@ nav.navbar ul li a:hover {
 }
 
 .secondary-navbar i {
-	padding: 15px;
+	font-size: 22px;
+	padding: 5px 15px;
 }
 
 @media (min-width: 1184px) {
@@ -265,6 +266,7 @@ nav.navbar ul li a:hover {
 	transition: 0.5s;
 	cursor: zoom-in;
 }
+
 .carousel .large-pic a {
 	font-size: 12px;
 	border-radius: 20px;
@@ -412,6 +414,12 @@ section .map {
 }
 
 /* THIRD SECTION */
+.icon-bubble_rating_bg {
+	font-size: 13px;
+}
+.icon-heart_fill {
+	color: var(--orange);
+}
 
 h3 {
 	font-size: 24px;
