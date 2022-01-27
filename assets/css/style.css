@@ -43,6 +43,11 @@ header .container {
 	margin-bottom: 0px;
 }
 
+.logo-and-search {
+	display: flex;
+	flex: 1.5;
+}
+
 /* logo */
 
 header #logo {
@@ -54,13 +59,13 @@ header #logo {
 
 header .search-field {
 	flex: 1;
+	max-width: 400px;
 	margin-right: 20px;
 	height: 38px;
 	border: solid var(--light-grey) 2px;
 	border-radius: 19px;
 	background-color: white;
 	white-space: nowrap;
-	max-width: 340px;
 }
 header .search-field i {
 	padding: 7px 7px;
@@ -119,9 +124,29 @@ header ul {
 	cursor: pointer;
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
 	header ul li span {
 		display: none;
+	}
+}
+
+.breakpoint768 {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	header ul {
+		display: none;
+	}
+	.search-field {
+		display: none;
+	}
+	.logo-and-search {
+		justify-content: center;
+	}
+	i.breakpoint768 {
+		display: initial;
+		font-size: 20px;
 	}
 }
 
@@ -188,18 +213,28 @@ nav.navbar ul li a:hover {
 	padding: 15px;
 }
 
-@media screen and (min-width: 1184px) {
+@media (min-width: 1184px) {
 	.secondary-navbar li.no-display {
 		display: none;
 	}
 }
-@media screen and (max-width: 1184px) {
+@media (max-width: 1184px) {
 	.secondary-navbar ul {
 		flex-wrap: wrap;
 	}
 	.flex-break {
 		flex-basis: 100%;
-		background-color: violet;
+	}
+}
+
+@media (max-width: 768px) {
+	.secondary-navbar ul {
+		flex-wrap: nowrap;
+		white-space: nowrap;
+	}
+	.secondary-navbar ul li {
+		height: 50px;
+		line-height: 25px;
 	}
 }
 /* SECTION */
@@ -259,6 +294,12 @@ nav.navbar ul li a:hover {
 	flex: 1;
 }
 
+@media (max-width: 768px) {
+	.small-pic {
+		display: none;
+	}
+}
+
 .small-pic img {
 	margin-bottom: 3px;
 }
@@ -285,6 +326,25 @@ div.links p {
 .second-section {
 	display: flex;
 	margin-bottom: 300px;
+}
+
+@media (max-width: 768px) {
+	.second-section {
+		flex-direction: column;
+		align-items: center;
+	}
+	.second-section div.description {
+		width: 100%;
+		padding: 0;
+		margin-bottom: 40px;
+	}
+
+	.second-section aside {
+		position: relative;
+		width: 70%;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 .second-section .description {
@@ -368,6 +428,18 @@ h4 {
 	gap: 5px;
 }
 
+@media (max-width: 768px) {
+	.secondary-carousel {
+		margin: 40px 0 80px 0;
+		display: initial;
+		justify-content: space-between;
+		gap: 5px;
+	}
+	.secondary-carousel .description {
+		margin: 40px 0;
+	}
+}
+
 .secondary-carousel .description {
 	flex: 1;
 }
@@ -402,9 +474,14 @@ h4 {
 }
 
 .secondary-carousel .carousel-pic {
-	max-height: 250px;
 	position: relative;
 }
+@media (max-width: 768px) {
+	.carte {
+		min-width: 80vw;
+	}
+}
+
 .carte:hover .actual-pic {
 	opacity: 0.8;
 	transition: 0.3s;
