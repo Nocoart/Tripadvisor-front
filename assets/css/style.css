@@ -314,14 +314,14 @@ section aside {
 	margin-left: 20px;
 }
 
-aside .carte {
+aside .map-carte {
 	background-color: var(--orange);
 	padding: 30px;
 	border-radius: 15px 15px 0 0;
 	z-index: 2;
 }
 
-aside .carte button {
+aside .map-carte button {
 	margin: 20px 0 0px 0;
 	padding: 0 15px;
 	height: 50px;
@@ -361,47 +361,61 @@ h4 {
 	color: black;
 }
 
-.third-section .description p {
+.secondary-carousel {
+	margin: 40px 0 80px 0;
+	display: flex;
+	justify-content: space-between;
+	gap: 5px;
+}
+
+.secondary-carousel .description {
+	flex: 1;
+}
+
+.secondary-carousel .description p {
 	line-height: 20px;
 	margin-bottom: 20px;
 	padding-right: 20px;
 	color: var(--grey);
 }
 
-.carousel a {
+.secondary-carousel a {
 	color: var(--medium-grey);
 	font-weight: bold;
 }
 
-.third-section .carousel {
-	margin: 40px 0 80px 0;
+.carousel-scroll {
 	display: flex;
-	justify-content: space-between;
+	overflow: scroll;
+	flex: 3;
 	gap: 15px;
 }
 
-.carousel .carousel-item {
+.carte {
+	flex: 1;
+	min-width: 270px;
+}
+
+.carte p {
+	font-size: 14px;
+	color: var(--grey);
+}
+
+.secondary-carousel .carousel-pic {
 	max-height: 250px;
 	position: relative;
-	flex: 1;
 }
-.carousel .carousel-item:hover .actual-pic {
+.carte:hover .actual-pic {
 	opacity: 0.8;
 	transition: 0.3s;
 }
-.carousel .carousel-item:hover h4 {
+.carte:hover h4 {
 	color: var(--medium-grey);
 	text-decoration: underline;
 }
 
-.carousel .carousel-item .carousel-pic {
-	max-height: 250px;
-	position: relative;
-}
-
 .carousel-pic .actual-pic {
 	object-fit: cover;
-	max-height: 200px;
 	width: 100%;
 }
 
@@ -419,11 +433,6 @@ h4 {
 	position: absolute;
 	bottom: 10px;
 	left: 5px;
-}
-
-.third-section .carte p {
-	font-size: 14px;
-	color: var(--grey);
 }
 
 .michelin {
