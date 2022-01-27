@@ -344,6 +344,10 @@ div.links p {
 		width: 70%;
 		justify-content: center;
 		align-items: center;
+		margin-top: 20px;
+	}
+	.second-section .map {
+		margin-top: initial;
 	}
 }
 
