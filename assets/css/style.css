@@ -19,6 +19,7 @@ body {
 	width: 95vw;
 	max-width: 1124px;
 	margin: 10px auto;
+	position: relative;
 }
 section {
 	margin-bottom: 100px;
@@ -146,8 +147,70 @@ header ul {
 	}
 	i.breakpoint768 {
 		display: initial;
-		font-size: 20px;
+		font-size: 24px;
 	}
+	header #logo {
+		width: 200px;
+		margin-right: 0px;
+	}
+}
+
+/* login MODAL */
+
+.hidden {
+	display: none;
+}
+
+#login-modal {
+	position: fixed;
+	left: 2%;
+	right: 2%;
+	background-color: var(--light-grey);
+	border-radius: 20px;
+	z-index: 4;
+	margin-top: -30px;
+}
+
+#close-modal-btn {
+	display: block;
+	height: 40px;
+	width: 40px;
+	line-height: 20px;
+	font-size: 24px;
+	font-weight: bold;
+	background-color: white;
+	border: none;
+	border-radius: 50%;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+#modal-title {
+	text-align: center;
+	padding-top: 30px;
+}
+#login-form {
+	text-align: center;
+	padding-bottom: 30px;
+}
+#login-form input {
+	margin: 10px;
+	border: none;
+	border-radius: 5px;
+}
+#input-email {
+	width: 205px;
+}
+
+#login-form button {
+	background-color: var(--green);
+	margin-top: 15px;
+	height: 30px;
+	width: 140px;
+	border: none;
+	border-radius: 15px;
+	color: var(--light-grey);
+	font-weight: bold;
 }
 
 /* TITRE */
@@ -214,7 +277,7 @@ nav.navbar ul li a:hover {
 	padding: 5px 15px;
 }
 
-@media (min-width: 1184px) {
+@media (min-width: 1185px) {
 	.secondary-navbar li.no-display {
 		display: none;
 	}

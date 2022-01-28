@@ -9,6 +9,8 @@
 		<link rel="stylesheet" href="./assets/css/style.css" />
 		<link rel="stylesheet" href="./assets/css/fonts.css" />
 		<link rel="stylesheet" href="./assets/css/icons.css" />
+		<script src="./assets/js/main.js" defer></script>
+
 		<script
 			src="https://kit.fontawesome.com/8ad7519b28.js"
 			crossorigin="anonymous"
@@ -17,6 +19,8 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 
 		<title>TripAdvisor</title>
+
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	</head>
 
 	<header>
@@ -57,6 +61,56 @@
 	</header>
 	<body>
 		<div class="container">
+			<!-- CONNEXION MODAL -->
+
+			<section id="login-modal" class="hidden">
+				<button id="close-modal-btn"><i class="icon-times"></i></button>
+				<h2 id="modal-title">Connectez-vous</h2>
+				<form id="login-form">
+					First name :
+					<input
+						type="text"
+						required="required"
+						name="firstname"
+						id="input-firstname"
+						value=""
+						placeholder="John"
+					/><br />
+					Last name :
+					<input
+						type="text"
+						required="required"
+						name="lastname"
+						id="input-lastname"
+						value=""
+						placeholder="Doe"
+					/><br />
+					E-mail :
+					<input
+						type="email"
+						required="required"
+						name="email"
+						id="input-email"
+						value=""
+						placeholder="john.doe@gmail.com"
+					/>
+					<br />
+					Password :
+					<input
+						type="password"
+						required="required"
+						name="password"
+						id="input-password"
+						value=""
+					/>
+					<br />
+
+					<button id="login-btn" type="submit">Connexion</button>
+				</form>
+			</section>
+
+			<!-- SECTIONS -->
+
 			<section class="first-section">
 				<h1><span>Explorez</span> Paris</h1>
 				<nav class="secondary-navbar">
